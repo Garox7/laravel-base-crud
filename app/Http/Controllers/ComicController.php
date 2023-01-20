@@ -14,7 +14,10 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        //chiedere al database la lista dei fumetti
+        $comics = Comic::all();
+        // tornare la vista che stampa la lista di case
+        return view('comics.index', compact('comics'));
     }
 
     /**
