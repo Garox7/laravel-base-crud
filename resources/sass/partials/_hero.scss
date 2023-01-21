@@ -1,0 +1,8 @@
+section.hero {
+    height: $hero-height;
+
+    img {
+        object-fit: cover;
+        object-position: top;
+    }
+}

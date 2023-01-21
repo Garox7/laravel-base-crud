@@ -17,7 +17,9 @@ class ComicController extends Controller
         //chiedere al database la lista dei fumetti
         $comics = Comic::all();
         // tornare la vista che stampa la lista di case
-        return view('comics.index', compact('comics'));
+        return view('comics.index', compact('comics'), [
+            'menu' => config('menu')
+        ]);
     }
 
     /**

@@ -1,0 +1,44 @@
+section.sign-up {
+    background: linear-gradient(90deg,#2a0541,#5816bd);
+    color: white;
+
+    .sign-up-cta {
+        height: 100%;
+        align-items: flex-start;
+
+        h1 {
+            font-size: 58px;
+            margin: 0 0 8px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            padding: 10px 30px;
+
+            &:hover {
+                background-color: $blue;
+                border-color: $blue;
+            }
+        }
+    }
+
+    .sign-up-image img {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 860px){
+    section.sign-up .container {
+        flex-direction: column;
+    }
+
+    section.sign-up .sign-up-cta button {
+        margin-bottom: 1rem;
+    }
+}

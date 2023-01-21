@@ -1,0 +1,65 @@
+section.badges {
+    background-color: #3880f1;
+    width: 100%;
+
+    .badges-container {
+        padding: 2rem 1rem;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .badges {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            img {
+                height: 45px;
+                width: fit-content;
+            }
+
+            &:last-child img {
+                height: 30px;
+            }
+
+            h4 {
+                color: white;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .badges-container {
+        justify-content: center;
+        gap: 2rem;
+
+        .badges {
+            flex: 1 1 calc(100% / 3 - 4rem);
+            max-width: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .badges-container {
+        flex-direction: column;
+        gap: 2rem;
+
+        .badges {
+            flex: 1 1 calc(100% / 3 - 4rem);
+
+            img {
+                height: 60px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}

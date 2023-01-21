@@ -1,1 +1,10 @@
-@import "~bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+@import 'partials/variables';
+@import 'partials/reset';
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/product_grid';
+@import 'partials/badges';
+@import 'partials/sign-up';
+@import 'partials/footer';
