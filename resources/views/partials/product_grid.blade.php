@@ -6,7 +6,7 @@
         <div class="card-container flex-row-center">
             @foreach ($comics as $item)
                 <div class="card">
-                    <a class="flex-column-center" href="/">
+                    <a class="flex-column-center" href="{{ route('comics.show', ['comic' => $item->id]) }}">
                         <div class="card-cover">
                             <img src="{{ $item->thumb }}" alt="{{ $item->title }}">
                         </div>
