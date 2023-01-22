@@ -58,7 +58,6 @@ __webpack_require__(/*! ./partials/form_create */ "./resources/js/partials/form_
 
 var label = document.querySelector('label');
 var inputEle = Array.from(document.querySelectorAll('.input-form'));
-console.log(inputEle);
 function handleInput(event) {
   var element = event.target;
   if (element.value.trim() === '') {

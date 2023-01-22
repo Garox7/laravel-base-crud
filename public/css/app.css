@@ -411,11 +411,7 @@ section.create-form .form-container form div input:focus, section.create-form .f
   outline: none;
   border-color: #0074e8;
 }
-section.create-form .form-container form div input:focus-within ~ label, section.create-form .form-container form div textarea:focus-within ~ label {
-  top: -0.15rem;
-  font-size: 14px;
-}
-section.create-form .form-container form div input.has-text ~ label, section.create-form .form-container form div textarea.has-text ~ label {
+section.create-form .form-container form div input:focus ~ label, section.create-form .form-container form div input.has-text ~ label, section.create-form .form-container form div textarea:focus ~ label, section.create-form .form-container form div textarea.has-text ~ label {
   top: -0.15rem;
   font-size: 14px;
 }

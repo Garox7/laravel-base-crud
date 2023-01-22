@@ -1,6 +1,6 @@
 <section class="create-form">
     <div class="form-container flex-column-center">
-        <h1 >CREATE YOUR COMIC</h1>
+        <h1 >CREA IL TUO FUMETTO</h1>
         <form action="{{ route('comics.store') }}" method="post">
             @csrf()
             <div>

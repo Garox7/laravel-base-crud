@@ -1,6 +1,5 @@
 const label = document.querySelector('label');
 const inputEle = Array.from(document.querySelectorAll('.input-form'));
-console.log(inputEle)
 
 function handleInput(event) {
     const element = event.target;
