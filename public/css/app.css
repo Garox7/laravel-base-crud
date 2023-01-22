@@ -353,3 +353,22 @@ footer p {
   font-size: 22px;
   font-weight: bold;
 }
+
+section.create-form {
+  background-color: #1c1c1c;
+  color: white;
+  width: 100%;
+}
+section.create-form .container.flex-column-center {
+  position: relative;
+  padding: 3rem 1.5rem;
+}
+section.create-form .container.flex-column-center .banner-title {
+  background-color: #0074e8;
+  color: white;
+  font-weight: bold;
+  padding: 8px 20px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
