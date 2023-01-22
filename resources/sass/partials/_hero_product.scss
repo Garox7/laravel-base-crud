@@ -1,0 +1,31 @@
+section.hero-product {
+    margin-bottom: 2rem;
+
+    .hero-container {
+        height: 250px;
+    }
+
+    img {
+        display: block;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .hero-band {
+        background-color: $blue;
+        height: 40px;
+        width: 100%;
+        padding: 0 1.5rem;
+
+        .container-sm {
+            max-width: 900px;
+            margin: 0 auto;
+
+            img {
+                width: 120px;
+                vertical-align: baseline;
+                transform: translateY(-85%);
+            }
+        }
+    }
+}

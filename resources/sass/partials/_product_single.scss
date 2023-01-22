@@ -1,0 +1,84 @@
+.product-single .container-sm {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+
+    .product-info {
+        flex: 1 1 70%;
+
+        h1 {
+            font-size: 32px;
+            text-transform: uppercase;
+            margin-bottom: .725rem;
+        }
+
+        .info-header {
+            background-color: #4faf42;
+            color: white;
+            margin-bottom: .725rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .product-price {
+                flex: 1 1 60%;
+                height: 100%;
+                padding: 1rem;
+                border-right: 1px solid black;
+                justify-content: space-between;
+
+                .info-left span, .info-right span {
+                    font-size: 18px;
+                    font-weight: bold;
+                    letter-spacing: .03rem;
+
+                    &:first-child {
+                        margin-right: 10px;
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+
+                    &:last-child {
+
+                    }
+                }
+
+            }
+
+            .product-availability {
+                flex: 1 0 30%;
+                padding: 1rem;
+                text-align: center;
+
+                select {
+                    background-color: transparent;
+                    color: white;
+                    font-weight: bold;
+                    border: none;
+                }
+            }
+        }
+
+        .description-text {
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+
+    .advertisement {
+        flex: 1 1 25%;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .product-single .container-sm .advertisement {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .product-single .container-sm .product-info .info-header .product-price {
+        border-right: none;
+    }
+}
