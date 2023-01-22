@@ -3,18 +3,98 @@ section.create-form {
     color: white;
     width: 100%;
 
-    .container.flex-column-center {
-        position: relative;
-        padding: 3rem 1.5rem;
+    .form-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem;
 
-        .banner-title {
-            background-color: $blue;
-            color: white;
-            font-weight: bold;
-            padding: 8px 20px;
-            position: absolute;
-            top: -20px;
-            left: 0;
+        h1 {
+            font-size: 32px;
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            width: 100%;
+
+            div {
+                width: 100%;
+                position: relative;
+                padding: 0 0 2.25rem;
+
+                input, textarea {
+                    background-color: transparent;
+                    color: white;
+                    font-family: 'PT Sans Narrow', sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 0.0285rem;
+                    line-height: 1;
+                    height: 40px;
+                    width: 100%;
+                    padding: 1.275rem 0 .125rem;
+                    border: none;
+                    border-bottom: 1px solid #bdbdbd;
+                    transition: all .2s ease-in-out;
+
+                    &~label {
+                        color: #a0a0a0;
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        font-size: 18px;
+                        font-weight: bold;
+                        letter-spacing: 0.0285rem;
+                        line-height: 1;
+                        position: absolute;
+                        vertical-align: baseline;
+                        top: 0.625rem;
+                        left: 0;
+                        user-select: none;
+                        transition: all .2s ease-in;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        border-color: $blue;
+                    }
+
+                    &:focus-within~label {
+                        top: -0.15rem;
+                        font-size: 14px;
+                    }
+
+                    &.has-text~label {
+                        top: -0.15rem;
+                        font-size: 14px;
+                    }
+                }
+
+                textarea {
+                    height: auto;
+                    resize: none;
+                }
+            }
+
+            input[type=submit] {
+                background-color: white;
+                color: black;
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                border: none;
+                border-radius: 35px;
+                letter-spacing: 0.0285rem;
+                line-height: 1;
+                font-size: 18px;
+                width: 100%;
+                height: 45px;
+                cursor: pointer;
+                transition: all .2s linear;
+
+                &:hover {
+                    background-color: $blue;
+                    color: white;
+                }
+            }
         }
     }
 }
+

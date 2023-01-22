@@ -9,6 +9,7 @@
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! ./partials/header */ "./resources/js/partials/header.js");
+__webpack_require__(/*! ./partials/form_create */ "./resources/js/partials/form_create.js");
 
 /***/ }),
 
@@ -49,6 +50,29 @@ __webpack_require__(/*! ./partials/header */ "./resources/js/partials/header.js"
 
 /***/ }),
 
+/***/ "./resources/js/partials/form_create.js":
+/*!**********************************************!*\
+  !*** ./resources/js/partials/form_create.js ***!
+  \**********************************************/
+/***/ (() => {
+
+var label = document.querySelector('label');
+var inputEle = Array.from(document.querySelectorAll('.input-form'));
+console.log(inputEle);
+function handleInput(event) {
+  var element = event.target;
+  if (element.value.trim() === '') {
+    element.classList.remove('has-text');
+  } else {
+    element.classList.add('has-text');
+  }
+}
+inputEle.forEach(function (element) {
+  element.addEventListener('input', handleInput);
+});
+
+/***/ }),
+
 /***/ "./resources/js/partials/header.js":
 /*!*****************************************!*\
   !*** ./resources/js/partials/header.js ***!
@@ -59,7 +83,6 @@ var searchEle = document.querySelector('.header-search');
 var searchBtn = document.querySelector('#header-search');
 var inputEle = document.querySelector('#header-search-input');
 var loginEle = document.querySelector('.header-login');
-console.log(searchBtn);
 searchBtn.addEventListener('click', function () {
   searchEle.classList.toggle('show');
   inputEle.classList.toggle('hidden');

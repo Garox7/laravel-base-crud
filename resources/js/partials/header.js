@@ -2,7 +2,6 @@ const searchEle = document.querySelector('.header-search');
 const searchBtn = document.querySelector('#header-search');
 const inputEle = document.querySelector('#header-search-input');
 const loginEle = document.querySelector('.header-login');
-console.log(searchBtn);
 
 searchBtn.addEventListener('click', function() {
     searchEle.classList.toggle('show');

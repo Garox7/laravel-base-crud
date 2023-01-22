@@ -359,16 +359,87 @@ section.create-form {
   color: white;
   width: 100%;
 }
-section.create-form .container.flex-column-center {
-  position: relative;
-  padding: 3rem 1.5rem;
+section.create-form .form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
 }
-section.create-form .container.flex-column-center .banner-title {
+section.create-form .form-container h1 {
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+}
+section.create-form .form-container form {
+  width: 100%;
+}
+section.create-form .form-container form div {
+  width: 100%;
+  position: relative;
+  padding: 0 0 2.25rem;
+}
+section.create-form .form-container form div input, section.create-form .form-container form div textarea {
+  background-color: transparent;
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.0285rem;
+  line-height: 1;
+  height: 40px;
+  width: 100%;
+  padding: 1.275rem 0 0.125rem;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  transition: all 0.2s ease-in-out;
+}
+section.create-form .form-container form div input ~ label, section.create-form .form-container form div textarea ~ label {
+  color: #a0a0a0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.0285rem;
+  line-height: 1;
+  position: absolute;
+  vertical-align: baseline;
+  top: 0.625rem;
+  left: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: all 0.2s ease-in;
+}
+section.create-form .form-container form div input:focus, section.create-form .form-container form div textarea:focus {
+  outline: none;
+  border-color: #0074e8;
+}
+section.create-form .form-container form div input:focus-within ~ label, section.create-form .form-container form div textarea:focus-within ~ label {
+  top: -0.15rem;
+  font-size: 14px;
+}
+section.create-form .form-container form div input.has-text ~ label, section.create-form .form-container form div textarea.has-text ~ label {
+  top: -0.15rem;
+  font-size: 14px;
+}
+section.create-form .form-container form div textarea {
+  height: auto;
+  resize: none;
+}
+section.create-form .form-container form input[type=submit] {
+  background-color: white;
+  color: black;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 35px;
+  letter-spacing: 0.0285rem;
+  line-height: 1;
+  font-size: 18px;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+section.create-form .form-container form input[type=submit]:hover {
   background-color: #0074e8;
   color: white;
-  font-weight: bold;
-  padding: 8px 20px;
-  position: absolute;
-  top: -20px;
-  left: 0;
 }
