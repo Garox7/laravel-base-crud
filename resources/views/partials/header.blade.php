@@ -8,7 +8,7 @@
                 <ul>
                     @foreach ($menu as $item)
                     <li>
-                        <a href="#!" class="header-link">
+                        <a href="{{ route('comics.index') }}" class="header-link">
                             {{ $item['label'] }}
                         </a>
                     </li>
