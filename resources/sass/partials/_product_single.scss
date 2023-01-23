@@ -89,6 +89,7 @@
 }
 
 .alert-succes {
+    display: block;
     background-color: #4faf42;
     color: white;
     font-size: 18px;
@@ -96,7 +97,16 @@
     max-width: 450px;
     padding: 1rem 2rem;
     margin: 0 auto;
+    border-left: 24px solid white;
+    border-right: 24px solid white;
     text-align: center;
+    transition: all .2s linear;
+
+    &.no-visible {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+    }
 }
 
 .delete-popup-backdrop {

@@ -1,11 +1,9 @@
 <section class="product-single">
-
     @if(session('create_success'))
         <div class="alert-succes">
             {{session('create_success')}}
         </div>
     @endif
-
     <div class="container-sm flex-row-center">
         <div class="product-info">
             <h1>{{ $comic->title }}</h1>
@@ -40,7 +38,6 @@
             <img src="{{ asset('images/adv.jpg') }}" alt="advertisment">
         </div>
     </div>
-
     <div class="delete-popup-backdrop flex-row-center hidden">
         <div class="popup-container">
             <h2>Sei sicuro di voler eliminare l'elemento?</h2>
@@ -56,4 +53,3 @@
         </div>
     </div>
 </section>
-{{-- <script src="{{ asset('js/partials/product_single.js') }}"></script> --}}

@@ -550,6 +550,7 @@ section.hero-product .hero-band .container-sm img {
 }
 
 .alert-succes {
+  display: block;
   background-color: #4faf42;
   color: white;
   font-size: 18px;
@@ -557,7 +558,15 @@ section.hero-product .hero-band .container-sm img {
   max-width: 450px;
   padding: 1rem 2rem;
   margin: 0 auto;
+  border-left: 24px solid white;
+  border-right: 24px solid white;
   text-align: center;
+  transition: all 0.2s linear;
+}
+.alert-succes.no-visible {
+  opacity: 0;
+  height: 0;
+  padding: 0;
 }
 
 .delete-popup-backdrop {
