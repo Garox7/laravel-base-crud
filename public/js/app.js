@@ -10,6 +10,7 @@
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! ./partials/header */ "./resources/js/partials/header.js");
 __webpack_require__(/*! ./partials/form_create */ "./resources/js/partials/form_create.js");
+__webpack_require__(/*! ./partials/product_single */ "./resources/js/partials/product_single.js");
 
 /***/ }),
 
@@ -86,6 +87,26 @@ searchBtn.addEventListener('click', function () {
   searchEle.classList.toggle('show');
   inputEle.classList.toggle('hidden');
   loginEle.classList.toggle('hidden');
+});
+
+/***/ }),
+
+/***/ "./resources/js/partials/product_single.js":
+/*!*************************************************!*\
+  !*** ./resources/js/partials/product_single.js ***!
+  \*************************************************/
+/***/ (() => {
+
+var deleteBtn = document.querySelector('.delete-button');
+var deletePopup = document.querySelector('.delete-popup-backdrop');
+var cancelBtn = document.querySelector('.cancel-button');
+deleteBtn.addEventListener('click', function () {
+  deletePopup.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+});
+cancelBtn.addEventListener('click', function () {
+  deletePopup.classList.add('hidden');
+  document.body.style.overflow = 'visible';
 });
 
 /***/ }),

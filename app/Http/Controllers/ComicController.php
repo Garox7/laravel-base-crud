@@ -54,7 +54,7 @@ class ComicController extends Controller
         $comic->type = $request['type'];
         $comic->save();
 
-        return redirect()->route('comics.show', $comic->id);
+        return redirect()->route('comics.show', ['comic' => $comic])->with('create_success', "Hai creato con successo $comic->title");
     }
 
     /**

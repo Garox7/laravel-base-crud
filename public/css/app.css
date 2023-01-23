@@ -15,6 +15,7 @@ html, body {
 
 body {
   margin-top: 60px;
+  position: relative;
 }
 
 img {
@@ -535,17 +536,77 @@ section.hero-product .hero-band .container-sm img {
   background-color: orange;
   border-color: orange;
 }
-.product-single .container-sm .product-info .control-button form .delete-button {
+.product-single .container-sm .product-info .control-button .delete-button {
   border-color: orangered;
   color: orangered;
 }
-.product-single .container-sm .product-info .control-button form .delete-button:hover {
+.product-single .container-sm .product-info .control-button .delete-button:hover {
   background-color: orangered;
   color: white;
 }
 .product-single .container-sm .advertisement {
   flex: 1 1 25%;
   align-items: flex-end;
+}
+
+.alert-succes {
+  background-color: #4faf42;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 450px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.delete-popup-backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  padding: 1.5rem;
+  position: fixed;
+  z-index: 20;
+}
+.delete-popup-backdrop .popup-container {
+  background-color: white;
+  max-width: 450px;
+  height: auto;
+  padding: 2rem;
+  border-radius: 30px;
+  text-align: center;
+}
+.delete-popup-backdrop .popup-container h2 {
+  margin-bottom: 0.3rem;
+}
+.delete-popup-backdrop .popup-container p {
+  color: red;
+  margin-bottom: 1rem;
+}
+.delete-popup-backdrop .popup-container .confirm-button-container {
+  gap: 8px;
+}
+.delete-popup-backdrop .popup-container .confirm-button-container .cancel-button, .delete-popup-backdrop .popup-container .confirm-button-container .confirm-button {
+  width: 100%;
+}
+.delete-popup-backdrop .popup-container .confirm-button-container .cancel-button {
+  border-color: orangered;
+  background-color: orangered;
+  color: white;
+  border-width: 2px;
+}
+.delete-popup-backdrop .popup-container .confirm-button-container .cancel-button:hover {
+  background-color: transparent;
+  color: orangered;
+}
+.delete-popup-backdrop .popup-container .confirm-button-container form .confirm-button {
+  border: none;
+}
+.delete-popup-backdrop .popup-container .confirm-button-container form .confirm-button:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  color: inherit;
 }
 
 @media screen and (max-width: 650px) {
