@@ -5,7 +5,7 @@
             @csrf()
             <div>
                 <input type="text" id="titleInput" name="title" class="input-form">
-                <label for="titleinput">Inserisci il titolo del fumetto</label>
+                <label for="titleinput">Inserisci il titolo</label>
             </div>
 
             <div>

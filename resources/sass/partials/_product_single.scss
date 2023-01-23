@@ -58,6 +58,15 @@
         .description-text {
             color: rgba(0, 0, 0, 0.7);
         }
+
+        .control-button {
+            margin-top: 1rem;
+
+            a .edit-button:hover {
+                background-color: orange;
+                border-color: orange;
+            }
+        }
     }
 
     .advertisement {

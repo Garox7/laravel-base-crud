@@ -219,6 +219,9 @@ section.product-grid button {
   display: block;
   margin: 0 auto;
 }
+section.product-grid button a {
+  color: inherit;
+}
 
 @media screen and (max-width: 1090px) {
   section.product-grid .card-container .card {
@@ -370,6 +373,7 @@ section.create-form .form-container h1 {
 }
 section.create-form .form-container form {
   width: 100%;
+  padding-top: 0.275rem;
 }
 section.create-form .form-container form div {
   width: 100%;
@@ -521,6 +525,13 @@ section.hero-product .hero-band .container-sm img {
 }
 .product-single .container-sm .product-info .description-text {
   color: rgba(0, 0, 0, 0.7);
+}
+.product-single .container-sm .product-info .control-button {
+  margin-top: 1rem;
+}
+.product-single .container-sm .product-info .control-button a .edit-button:hover {
+  background-color: orange;
+  border-color: orange;
 }
 .product-single .container-sm .advertisement {
   flex: 1 1 25%;
