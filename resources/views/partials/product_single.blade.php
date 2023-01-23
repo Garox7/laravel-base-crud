@@ -22,10 +22,15 @@
             </div>
             <p class="description-text">{{ $comic->description }}</p>
 
-            <div class="control-button">
+            <div class="control-button flex-row-center">
                 <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">
                     <button class="edit-button">Modifica</button>
                 </a>
+                <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="delete-button">Elimina</button>
+                </form>
             </div>
         </div>
         <div class="advertisement flex-column-center">

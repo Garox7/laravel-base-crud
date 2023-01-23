@@ -528,10 +528,20 @@ section.hero-product .hero-band .container-sm img {
 }
 .product-single .container-sm .product-info .control-button {
   margin-top: 1rem;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 .product-single .container-sm .product-info .control-button a .edit-button:hover {
   background-color: orange;
   border-color: orange;
+}
+.product-single .container-sm .product-info .control-button form .delete-button {
+  border-color: orangered;
+  color: orangered;
+}
+.product-single .container-sm .product-info .control-button form .delete-button:hover {
+  background-color: orangered;
+  color: white;
 }
 .product-single .container-sm .advertisement {
   flex: 1 1 25%;

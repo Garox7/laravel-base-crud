@@ -61,10 +61,22 @@
 
         .control-button {
             margin-top: 1rem;
+            justify-content: flex-start;
+            gap: 1rem;
 
             a .edit-button:hover {
                 background-color: orange;
                 border-color: orange;
+            }
+
+            form .delete-button {
+                border-color: orangered;
+                color: orangered;
+            }
+
+            form .delete-button:hover {
+                background-color: orangered;
+                color: white;
             }
         }
     }
